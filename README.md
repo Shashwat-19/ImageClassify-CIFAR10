@@ -6,7 +6,8 @@
 
 ---
 
-![CIFAR10 Banner](https://github.com/Shashwat-19/ImageClassify-CIFAR10/raw/main/assets/banner.jpg)
+![CIFAR10 Banner](https://github.com/Shashwat-19/ImageClassify-CIFAR10/raw/main/Assets/Image%20banner.jpeg)
+
 
 ## 🧭 Overview  
 **ImageClassify-CIFAR10** is a deep learning project built with TensorFlow and Keras that classifies images from the **CIFAR-10** dataset using a custom Convolutional Neural Network (CNN). It includes training logs, visualizations, filter visual inspection, confusion matrix analysis, and examples of misclassified outputs.
