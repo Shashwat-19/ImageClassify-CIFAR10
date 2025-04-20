@@ -8,90 +8,104 @@
 
 ![CIFAR10 Banner](https://github.com/Shashwat-19/ImageClassify-CIFAR10/raw/main/Assets/Image%20banner.jpeg)
 
-
-## 🧭 Overview  
-**ImageClassify-CIFAR10** is a deep learning project built with TensorFlow and Keras that classifies images from the **CIFAR-10** dataset using a custom Convolutional Neural Network (CNN). It includes training logs, visualizations, filter visual inspection, confusion matrix analysis, and examples of misclassified outputs.
+## 🧭 Overview
+**ImageClassify-CIFAR10** is a deep learning project built using **TensorFlow** and **Keras** that classifies images from the **CIFAR-10** dataset. The project includes a custom CNN model, training visualizations, confusion matrix analysis, and misclassified sample exploration.
 
 ---
 
 ## 📦 Latest Version: [v1.0](https://github.com/Shashwat-19/ImageClassify-CIFAR10/releases/tag/v1.0)
-
-This version includes full training workflow, evaluation metrics, and visual outputs.
+This version includes the full training workflow, evaluation metrics, and all visual output modules.
 
 ---
 
 ## ✨ Features
 
-- 📦 **CIFAR-10 Dataset** – 10 real-world object classes like cats, trucks, ships, and more.
-- 🧠 **Custom CNN Model** – Trained from scratch on CIFAR-10 images.
-- 📈 **Loss & Accuracy Graphs** – Training and validation visualizations.
-- 📊 **Confusion Matrix** – Identify classification performance across all classes.
-- 🔍 **Filter Visualization** – View first-layer convolutional filters.
-- ❌ **Misclassified Samples** – Display and analyze where the model fails.
+- 🖼️ **CIFAR-10 Dataset** — Contains 60,000 32x32 color images across 10 classes.
+- 🧠 **Custom CNN Architecture** — Built and trained from scratch.
+- 📈 **Training Visuals** — Loss and accuracy charts for both training and validation.
+- 📊 **Confusion Matrix** — Analyze class-wise performance.
+- 🧪 **Filter Visualization** — See what early convolutional layers are learning.
+- ❌ **Misclassified Samples** — Understand model weaknesses and limitations.
 
 ---
 
-## 📁 Dataset Classes
-
+## 🏷️ CIFAR-10 Classes
+```
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+```
 
-yaml
-Copy
-Edit
+## 🧠 Model Architecture
+```
+Input (32x32x3)
+↓
+Conv2D → ReLU → MaxPooling
+↓
+Conv2D → ReLU → MaxPooling
+↓
+Conv2D → ReLU → MaxPooling
+↓
+Flatten → Dense → Dropout → Softmax
+```
+---
+## 📁 Project Structure
 
+```
+ImageClassify-CIFAR10/
+├── Assets/
+│   └── Image banner.jpeg       # Project banner
+├── cifar10_classifier.py       # Model training and evaluation script
+├── .DS_Store                   # macOS system file (optional to delete)
+└── README.md                   # Documentation
+```
+---
+
+## 🚀 Run Locally
+
+```
+# Clone the repository
+git clone https://github.com/Shashwat-19/ImageClassify-CIFAR10.git
+cd ImageClassify-CIFAR10
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the model training script
+python cifar10_classifier.py
+```
 ---
 
 ## 🧰 Tech Stack
 
-- **Language**: Python  
-- **Libraries**: TensorFlow, NumPy, Matplotlib, Seaborn, scikit-learn  
+**Language:** Python 🐍
+
+**Libraries:** TensorFlow, NumPy, Matplotlib, Seaborn, scikit-learn
+
+**IDE:** Google Collab
 
 ---
 
-## 🧠 Model Architecture
-
-```bash
-Input 
-  ↓
-Conv2D → ReLU → MaxPooling  
-  ↓  
-Conv2D → ReLU → MaxPooling  
-  ↓  
-Conv2D → ReLU → MaxPooling  
-  ↓  
-Flatten → Dense → Dropout → Softmax
+## 📂 Output Files
 ```
----
-
-## 📁 Project Structure
-
-```bash
-ImageClassify-CIFAR10/
-├── assets/                         
-│   └── banner.jpg                 # Project banner image
-├── cifar10_classifier.py          # Main model training script   
-├── .DS_Store         
-└── README.md                      # Documentation
+         File               |             Description
+----------------------------|-------------------------------------------
+loss_accuracy_plot.png      |  Training/validation loss & accuracy chart
+confusion_matrix.png        |  Model performance across 10 classes
+filters_visualization.png   |  First-layer filter outputs
+misclassified_samples.png   |  Examples where the model failed
 ```
+
+## 📖 Documentation
+
+All logic is commented and structured inside cifar10_classifier.py.
+Further notes and tutorials will be shared soon on my blog.
 
 ---
 
-## 🧪 Installation
+## 🔒 License
 
-Install required dependencies using:
+This project is licensed under the MIT LICENSE. See the [LICENSE](https://github.com/Shashwat-19/ImageClassify-CIFAR10/blob/main/LICENSE) file for more info.
 
-```bash
-pip install -r requirements.txt
-```
-▶️ Run the Project
-
-# Clone the repository
-```
-git clone https://github.com/Shashwat-19/ImageClassify-CIFAR10.git
-cd ImageClassify-CIFAR10
-
-python cifar10_classifier.py
-```
+---
 
 ## 📩 Contact  
 ### Shashwat  
@@ -106,8 +120,3 @@ Passionate about building scalable applications and contributing to transformati
 
 ### 📌 Find me here:  
 [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/Shashwat-19)  [<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/shashwatk1956/)  [<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />](mailto:shashwat1956@gmail.com)  [<img src="https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" />](https://hashnode.com/@Shashwat56)
-
-
-
-
-
