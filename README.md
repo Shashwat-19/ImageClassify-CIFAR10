@@ -70,6 +70,7 @@ ImageClassify-CIFAR10/
 ├── assets/                         
 │   └── banner.jpg                 # Project banner image
 ├── cifar10_classifier.py          # Main model training script   
+├── .DS_Store         
 └── README.md                      # Documentation
 ```
 
